@@ -19,10 +19,10 @@ public class MergeSortedArray {
             }
         }
 
-        String printOutArray = "";
-        for (int i = 0; i < nums1Array.length; i++) {
-            printOutArray += nums1Array[i] + " ";
-        }
-        System.out.println(printOutArray);
+        // String printOutArray = "";
+        // for (int i = 0; i < nums1Array.length; i++) {
+        // printOutArray += nums1Array[i] + " ";
+        // }
+        // System.out.println(printOutArray);
     }
 }
