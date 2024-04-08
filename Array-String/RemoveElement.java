@@ -16,12 +16,12 @@ public class RemoveElement {
             removerPointer++;
         }
 
-        String printOutArray = "";
-        for (int i = 0; i < cotainNumbers; i++) {
-            printOutArray += numArray[i] + " ";
-        }
-        System.out.println("New array with removed numbers: " + printOutArray);
-        System.out.println("Count of contained numbers: " + cotainNumbers);
+        // String printOutArray = "";
+        // for (int i = 0; i < cotainNumbers; i++) {
+        //     printOutArray += numArray[i] + " ";
+        // }
+        // System.out.println("New array with removed numbers: " + printOutArray);
+        // System.out.println("Count of contained numbers: " + cotainNumbers);
 
         return cotainNumbers;
     }
