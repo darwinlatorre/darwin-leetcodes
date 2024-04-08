@@ -4,13 +4,9 @@
 
 <h2>Problems by category</h2>
 
-<ul>git
-    <li><a href="./Array-String/">Array - String</a></li>
-    <li><a href="#">Coming soon...</a></li>
-    <li><a href="#">Coming soon...</a></li>
+<ul>
+    <li><a href="./Array-String/">Array/String</a></li>
+    <li>Coming soon...</li>
+    <li>Coming soon...</li>
     <li>...</li>
 </ul>
-
-<h2>Getting Started</h2>
-
-<p>To get started, clone this repository.</p>
