@@ -1,6 +1,6 @@
 public class RemoveDuplicatesSortedArrayII {
     public static void main(String[] agrs) {
-        int[] array1 = { 1, 1, 1, 2, 2, 3 };
+        //int[] array1 = { 1, 1, 1, 2, 2, 3 };
         int[] array2 = { 0, 0, 1, 1, 1, 1, 2, 3, 3 };
         removeDuplicates(array2);
     }
