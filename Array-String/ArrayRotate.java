@@ -2,14 +2,32 @@ import java.util.Arrays;
 
 public class ArrayRotate {
     public static void main(String[] args) {
-        int[] testArray1 = { 1, 2 };
-        int rorationNum1 = 5;
+        int[] testArray1 = { 1, 2, 3, 4, 5, 6, 7 };
+        int rorationNum1 = 3;
         // int[] testArray2 = { 1, 2, 3, 4, 5, 6, 7 };
         // int rorationNum2 = 3;
         Rotate(testArray1, rorationNum1);
     }
 
     public static void Rotate(int[] nums, int timesToMove) {
+
+        timesToMove = timesToMove % nums.length;
+        reverse(nums, 0, nums.length - 1);
+        reverse(nums, 0, timesToMove - 1);
+        reverse(nums, timesToMove, nums.length - 1);
+
+        print(nums, nums.length);
+    }
+
+    public static void reverse(int[] array, int star, int end) {
+        for (int i = star; i < end; i++) {
+            int tempVal = array[i];
+            array[i] = array[end];
+            array[end--] = tempVal;
+        }
+    }
+
+    public static void Rotate1(int[] nums, int timesToMove) {
 
         if (nums.length <= 1) {
             return;
@@ -29,7 +47,7 @@ public class ArrayRotate {
         print(nums, nums.length);
     }
 
-    public static void Rotate1(int[] nums, int timesToMove) {
+    public static void Rotate2(int[] nums, int timesToMove) {
 
         int[] tempArray = nums.clone();
         float mod = timesToMove % 2;
